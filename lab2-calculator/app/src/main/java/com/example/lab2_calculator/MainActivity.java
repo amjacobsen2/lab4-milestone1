@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void add(View view) {
-        Log.i("View", "Add");
         EditText text1 = (EditText) findViewById(R.id.Num1);
         int num1 = Integer.parseInt(text1.getText().toString());
 
@@ -25,13 +24,11 @@ public class MainActivity extends AppCompatActivity {
         int num2 = Integer.parseInt(text2.getText().toString());
 
         int result = num1 + num2;
-        Log.i("button", String.valueOf(result));
         Intent intent = new Intent(this, MainActivity2.class);
         intent.putExtra("resultVal", String.valueOf(result));
         startActivity(intent);
     }
     public void subtract(View view) {
-        Log.i("View", "Add");
         EditText text1 = (EditText) findViewById(R.id.Num1);
         int num1 = Integer.parseInt(text1.getText().toString());
 
@@ -39,13 +36,11 @@ public class MainActivity extends AppCompatActivity {
         int num2 = Integer.parseInt(text2.getText().toString());
 
         int result = num1 - num2;
-        Log.i("button", String.valueOf(result));
         Intent intent = new Intent(this, MainActivity2.class);
         intent.putExtra("resultVal", String.valueOf(result));
         startActivity(intent);
     }
     public void multiply(View view) {
-        Log.i("View", "Add");
         EditText text1 = (EditText) findViewById(R.id.Num1);
         int num1 = Integer.parseInt(text1.getText().toString());
 
@@ -53,13 +48,11 @@ public class MainActivity extends AppCompatActivity {
         int num2 = Integer.parseInt(text2.getText().toString());
 
         int result = num1 * num2;
-        Log.i("button", String.valueOf(result));
         Intent intent = new Intent(this, MainActivity2.class);
         intent.putExtra("resultVal", String.valueOf(result));
         startActivity(intent);
     }
     public void divide(View view) {
-        Log.i("View", "Add");
         EditText text1 = (EditText) findViewById(R.id.Num1);
         int num1 = Integer.parseInt(text1.getText().toString());
 
@@ -67,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
         int num2 = Integer.parseInt(text2.getText().toString());
 
         int result = num1 / num2;
-        Log.i("button", String.valueOf(result));
         Intent intent = new Intent(this, MainActivity2.class);
         intent.putExtra("resultVal", String.valueOf(result));
         startActivity(intent);

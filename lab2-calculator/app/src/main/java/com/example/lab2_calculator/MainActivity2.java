@@ -19,7 +19,6 @@ public class MainActivity2 extends AppCompatActivity {
         textView= (TextView) findViewById(R.id.textView5);
         Intent intent = getIntent();
         String str = intent.getStringExtra("resultVal");
-        Log.i("result", str);
         textView.setText(str);
     }
 }
